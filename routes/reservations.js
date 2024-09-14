@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db');  // Importar la conexión a la base de datos
+const db = require('../config/db');  // Importar la conexión a la base de datos
 
 // RUTA 1: Obtener todas las reservaciones (GET /reservations)
 router.get('/', (req, res) => {
